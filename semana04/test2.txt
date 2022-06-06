@@ -1,0 +1,15 @@
+-> Azure Boards - Gestão de projetos
+
+-> Azure Repos - Repositório Git, versionamento das aplicações, infinitos repositórios sem custo extra
+	git = protocolo de controle de versão
+
+-> Azure Test Plans - Testes manuais ou automatizados, geração de métricas para pipeline
+
+-> Azure Artifacts - Artefatos. Armazenar pacotes privados.
+
+https://dev.azure.com/mylittletest/_settings/projects?__rt=fps&__ver=2
+
+And the projects' results are in fps > dataProviders > data > ms.vss-admin-web.organization-projects-data-provider > Projects (include process template name).
+
+https://dev.azure.com/mylittletest/_apis/projects?api-version=6.0
+
