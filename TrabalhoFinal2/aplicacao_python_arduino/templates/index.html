@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Inteligente</title>
+  <link href="..\static\css\estilo.css" rel="stylesheet">
+</head>
+<body>
+<div class='interItems'>
+  <h1>Controle com Arduino usando Python</h1>
+  <form action="/" style="padding: 20px" method="POST">
+    <p title="Digite o ambiente (Sala, Cozinha, Quarto, Suite, Banheiro)!">Ambiente
+      <select name="controle" id="controle">
+        <option value="Sala">Sala</option>
+        <option value="Cozinha">Cozinha</option>
+        <option value="Quarto">Quarto</option>
+        <option value="Suite">Suite</option>
+        <option value="Banheiro">Banheiro</option>
+        <option value="Alarme">Alarme</option>
+      </select>
+      <br><br>
+      <input type="submit" name="val" value="ON" id="button">
+      <input type="submit" name="val" value="OFF" id="button1">
+    </p>
+    <p title="Portão">
+      Portão (0 a 100%) <input type="text" name="content" id="content1">
+      <input type="submit" name="val" value="Alterar" id="button2">
+    </p>
+    <p name="textolista">Lista de Dados na Tabela</p>
+  </form>
+  <form>
+    {% for content in contents %}
+      <p>{{ content[1] }} {{ content[0] }} - {{ content[3] }}</p>
+    {% endfor%}
+  </form>
+</div>
+</body>
+</html>
